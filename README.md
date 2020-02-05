@@ -120,7 +120,8 @@ Redefine `fish_prompt` in `~/.config/fish/config.fish`:
 
 ```bash
 function fish_prompt
-    eval $GOPATH/bin/powerline-go -error $status -shell bare
+#    eval $GOPATH/bin/powerline-go -error $status -shell bare "not working anymore"
+     /bin/powerline-go -shell bare $status
 end
 ```
 ### Nix
